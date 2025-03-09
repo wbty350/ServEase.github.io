@@ -1,1 +1,172 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ServEase</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="logo">
+      <img src="" alt="ServEase">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="registration.html" class="btn">Register</a></li> <!-- Added registration button -->
+      </ul>
+    </nav>
+    <div class="cta">
+      <a href="book.html" class="btn">Book Now</a>
+    </div>
+    <div class="menu-toggle" id="mobile-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Your Home, Your Services</h1>
+      <p>Book reliable home services at your convenience.</p>
+      <form class="search-form" id="searchForm">
+        <input type="text" id="searchInput" placeholder="Search for a service...">
+        <button type="submit"><i class="fas fa-search"></i></button>
+      </form>
+      <p id="searchError" class="error-message"></p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <h2>Popular Services</h2>
+    <div class="service-list">
+      <!-- Home Cleaning -->
+      <div class="service-item">
+        <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="Home Cleaning">
+        <h3>Home Cleaning</h3>
+        <p>Professional cleaning services for your home.</p>
+        <div class="service-details">
+          <p>Deep cleaning, regular cleaning, and more.</p>
+        </div>
+      </div>
+
+      <!-- Plumbing -->
+      <div class="service-item">
+        <img src="https://img.freepik.com/free-photo/man-installs-heating-system-house-checks-pipes-with-wrench_169016-55834.jpg?t=st=1741419053~exp=1741422653~hmac=ba2c94a4e6a62e932a2061060f1dfa9bbc7db73e99c92a25697bcd701ba8ae47&w=1380" alt="Plumbing">
+        <h3>Plumbing</h3>
+        <p>Fix leaks and plumbing issues with experts.</p>
+        <div class="service-details">
+          <p>Pipe repairs, faucet installation, and more.</p>
+        </div>
+      </div>
+
+      <!-- Cleaning and Waste Management -->
+      <div class="service-item">
+        <img src="https://img.freepik.com/free-photo/close-up-hand-holding-plastic-bottle_23-2149181970.jpg?t=st=1741419183~exp=1741422783~hmac=877c69718a45abeacace6b0c5399cd2ada1d3292860b33cab593b9a513638a83&w=1380" alt="Cleaning and Waste Management">
+        <h3>Cleaning and Waste Management</h3>
+        <p>Professional cleaning and eco-friendly waste disposal services.</p>
+        <div class="service-details">
+          <p>Includes deep cleaning, regular cleaning, and waste recycling.</p>
+        </div>
+      </div>
+
+      <!-- Appliance Repairing -->
+      <div class="service-item">
+        <img src="https://img.freepik.com/free-photo/service-maintenance-worker-repairing_23-2149176749.jpg?t=st=1741419327~exp=1741422927~hmac=26d57597c1cad55c3b1734fd6341afca5202305a29e9f7db28b4d7b852988b3a&w=1380" alt="Appliance Repairing">
+        <h3>Appliance Repairing</h3>
+        <p>Fix and maintain your home appliances with expert technicians.</p>
+        <div class="service-details">
+          <p>Repair for refrigerators, washing machines, ACs, and more.</p>
+        </div>
+      </div>
+
+      <!-- Home Security and Automation -->
+      <div class="service-item">
+        <img src="https://img.freepik.com/free-photo/man-using-tablet-his-smart-home_23-2149036896.jpg?t=st=1741419654~exp=1741423254~hmac=38ddf96037880121d929c813e96881825cd071f59ea3e22b78f3485994748b14&w=1380" alt="Home Security and Automation">
+        <h3>Home Security and Automation</h3>
+        <p>Secure your home with advanced security and automation systems.</p>
+        <div class="service-details">
+          <p>Installation of CCTV, smart locks, and home automation.</p>
+        </div>
+      </div>
+
+      <!-- Painting and Carpentry -->
+      <div class="service-item">
+        <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="Painting and Carpentry">
+        <h3>Painting and Carpentry</h3>
+        <p>Transform your space with professional painting and carpentry.</p>
+        <div class="service-details">
+          <p>Interior/exterior painting and custom carpentry work.</p>
+        </div>
+      </div>
+
+      <!-- Vehicle Service -->
+      <div class="service-item">
+        <img src="https://img.freepik.com/free-photo/muscular-car-service-worker-repairing-vehicle_146671-19695.jpg?t=st=1741419790~exp=1741423390~hmac=bc465b357f6ee2c8639c3ca3b0ad1e00aaa4f64ec1a7ab291f44abaf3571f6ce&w=1380" alt="Vehicle Service">
+        <h3>Vehicle Service</h3>
+        <p>Keep your vehicle in top condition with expert servicing.</p>
+        <div class="service-details">
+          <p>Regular maintenance, repairs, and detailing.</p>
+        </div>
+      </div>
+
+      <!-- Gardening and Landscaping -->
+      <div class="service-item">
+        <img src="https://img.freepik.com/free-photo/bearded-man-holding-hose-standing-watering-plants-unrecognizable-blurred-colleague-growing-flowers-two-gardeners-wearing-uniform-working-hothouse-gardening-activity-summer-concept_74855-12690.jpg?t=st=1741419456~exp=1741423056~hmac=20d3db5dc7473ed2ab351c000e7ee2b9cd4ccc36ac29933f711e78c936f8e43b&w=1380" alt="Gardening and Landscaping">
+        <h3>Gardening and Landscaping</h3>
+        <p>Create and maintain beautiful outdoor spaces.</p>
+        <div class="service-details">
+          <p>Garden design, lawn care, and landscaping services.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer id="contact">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Follow Us</h4>
+        <ul class="social-icons">
+          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 ServEase. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
